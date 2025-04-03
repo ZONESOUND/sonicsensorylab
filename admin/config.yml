@@ -1,0 +1,28 @@
+backend:
+  name: github         # 後端認證使用 GitHub
+  branch: main         # 使用 main branch 作為內容來源
+  repo: chipohao/sonicsensorylab   # 您的 GitHub repository，請確認名稱正確
+
+media_folder: "assets/uploads"     # 上傳媒體檔案存放的資料夾（相對於 repository 根目錄）
+public_folder: "/assets/uploads"     # 在網站上顯示媒體檔案的公開路徑
+
+collections:
+  - name: "pages"      # 管理單一頁面的集合
+    label: "Pages"
+    files:
+      - file: "about.md"      # 例如 About 頁面的檔案
+        label: "About Page"
+        name: "about"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Body", name: "body", widget: "markdown" }
+
+  - name: "posts"      # 管理文章（Blog Posts）
+    label: "Blog Posts"
+    folder: "_posts"   # 文章存放的資料夾（Jekyll 預設為 _posts）
+    create: true       # 允許在後台新增新文章
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"   # 自動產生檔名格式
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Body", name: "body", widget: "markdown" }
