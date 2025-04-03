@@ -1,7 +1,12 @@
 backend:
   name: github
   branch: main
-  repo: zonesound/sonicsensorylab  # 請確認與您 GitHub Repo 名稱相符
+  repo: zonesound/sonicsensorylab
+  auth_endpoint: https://github.com/login/oauth/authorize
+  # 以下兩項可以透過環境變數設定，或直接寫在 config.yml（但不建議公開 Client Secret）
+  client_id: Ov23lih5Y1iKOWuRDBDd
+  client_secret: 85ae7282374a9b17d9b9369413b5900d2364f8ba
+
 
 media_folder: "assets/uploads"      # 上傳媒體的資料夾（相對於 repository 根目錄）
 public_folder: "/assets/uploads"    # 在網站上顯示媒體檔案的公開路徑
