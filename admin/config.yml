@@ -1,11 +1,6 @@
 backend:
-  name: github
-  repo: zonesound/sonicsensorylab
-  branch: main
-  base_url: https://api.netlify.com
-  auth_endpoint: auth
-  # 可選：如果需要強制指定所屬域名
-  site_domain: zonesound.github.io
+  name: git-gateway
+  branch: main  # 確保與倉庫主分支一致
 
 media_folder: "assets/uploads"      # 上傳媒體的資料夾（相對於 repository 根目錄）
 public_folder: "/assets/uploads"    # 在網站上顯示媒體檔案的公開路徑
