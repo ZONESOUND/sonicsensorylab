@@ -1,10 +1,10 @@
 backend:
   name: github
-  repo: username/repo-name
+  repo: zonesound/sonicsensorylab
   branch: main  # or your default content branch
   base_url: https://api.netlify.com
   auth_endpoint: auth
-  # site_domain: your-site.domain  (See below)
+  # site_domain: your-site.domain
 
 
 media_folder: "assets/uploads"      # 上傳媒體的資料夾（相對於 repository 根目錄）
