@@ -1,28 +1,76 @@
 backend:
-  name: github         # 後端認證使用 GitHub
-  branch: main         # 使用 main branch 作為內容來源
-  repo: chipohao/sonicsensorylab   # 您的 GitHub repository，請確認名稱正確
+  name: github
+  branch: main
+  repo: zonesound/sonicsensorylab  # 請確認與您 GitHub Repo 名稱相符
 
-media_folder: "assets/uploads"     # 上傳媒體檔案存放的資料夾（相對於 repository 根目錄）
-public_folder: "/assets/uploads"     # 在網站上顯示媒體檔案的公開路徑
+media_folder: "assets/uploads"      # 上傳媒體的資料夾（相對於 repository 根目錄）
+public_folder: "/assets/uploads"    # 在網站上顯示媒體檔案的公開路徑
 
 collections:
-  - name: "pages"      # 管理單一頁面的集合
+  # 1) 單檔案的 Pages (範例: About)
+  - name: "pages"
     label: "Pages"
     files:
-      - file: "about.md"      # 例如 About 頁面的檔案
+      - file: "about.md"
         label: "About Page"
         name: "about"
         fields:
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Body", name: "body", widget: "markdown" }
 
-  - name: "posts"      # 管理文章（Blog Posts）
+  # 2) Blog Posts (預設 Jekyll 文章放在 _posts 資料夾)
+  - name: "posts"
     label: "Blog Posts"
-    folder: "_posts"   # 文章存放的資料夾（Jekyll 預設為 _posts）
-    create: true       # 允許在後台新增新文章
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"   # 自動產生檔名格式
+    folder: "_posts"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Body", name: "body", widget: "markdown" }
+
+  # 3) Pages 資料夾模式 (若您想改成整個 _pages 資料夾都能透過後台管理，可加這個集合)
+  - name: "site_pages"
+    label: "Site Pages"
+    folder: "_pages"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Body", name: "body", widget: "markdown" }
+
+  # 4) Portfolio
+  - name: "portfolio"
+    label: "Portfolio"
+    folder: "_portfolio"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Body", name: "body", widget: "markdown" }
+      - { label: "Image", name: "image", widget: "image", required: false }
+
+  # 5) Recipes
+  - name: "recipes"
+    label: "Recipes"
+    folder: "_recipes"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Body", name: "body", widget: "markdown" }
+      - { label: "Image", name: "image", widget: "image", required: false }
+
+  # 6) Residencies
+  - name: "residencies"
+    label: "Residencies"
+    folder: "_residencies"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Body", name: "body", widget: "markdown" }
+      - { label: "Image", name: "image", widget: "image", required: false }
