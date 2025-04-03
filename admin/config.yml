@@ -1,6 +1,8 @@
 backend:
   name: git-gateway
-  branch: main  # 確保與倉庫主分支一致
+  repo: zonesound/sonicsensorylab
+  branch: main
+
 
 media_folder: "assets/uploads"      # 上傳媒體的資料夾（相對於 repository 根目錄）
 public_folder: "/assets/uploads"    # 在網站上顯示媒體檔案的公開路徑
