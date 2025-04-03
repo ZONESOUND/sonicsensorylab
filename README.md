@@ -2,21 +2,25 @@
 
 **Managed by ZONESOUND CREATIVE**
 
-Sonic Sensory Lab is a non-profit platform dedicated to exploring the intersection of sound, technology, and interactive art. Our mission is to serve as a dynamic communication hub for our exhibitions, projects, residencies, and experimental research. The website is primarily in English and is designed to be easily updated by team members using a user-friendly backend.
+Sonic Sensory Lab is a non-profit platform dedicated to sustaining our operations, communicating with the public, facilitating international exchange, and developing innovative works at the intersection of sound, technology, and interactive art. The website is primarily in English and designed for easy updates by team members through a user-friendly backend.
 
 ## Objectives
 
-- **Easy Content Management:**  
-  Integrated with Decap CMS for a straightforward, Markdown-based editing experience. This setup allows team members, including interns and administrative staff, to update content quickly without technical overhead.
+- **Smooth Operations:**  
+  Ensure easy content updates and management using Decap CMS.
 
-- **Modern, Customizable Design:**  
-  Built using the Minimal Mistakes Jekyll theme, the site features a clean, two-column layout. Custom CSS modifications ensure a direct and uncluttered visual presentation that aligns with our institutional image.
+- **Effective Communication:**  
+  Serve as our public face to showcase projects, exhibitions, and initiatives.
 
-- **Effective External Communication:**  
-  The website acts as our public face, showcasing our projects and experimental initiatives to the world, fostering collaboration and outreach within the art and technology communities.
+- **International Exchange:**  
+  Foster global dialogue and collaborations in art and technology.
 
-- **Non-Profit & Sustainable:**  
-  By leveraging free and open-source technologies (such as Jekyll, GitHub Pages, and Decap CMS), the site is maintained at minimal cost while remaining highly flexible and accessible.
+- **Creative Development:**  
+  Support and present our innovative works.
+
+## Website
+
+Visit our website at: [http://zonesound.github.io/sonicsensorylab](http://zonesound.github.io/sonicsensorylab)
 
 ## Technologies & Packages
 
@@ -24,13 +28,13 @@ Sonic Sensory Lab is a non-profit platform dedicated to exploring the intersecti
   A static site generator that builds our site from Markdown and Liquid templates.
 
 - **[Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/):**  
-  A flexible, two-column theme that provides a modern and customizable design.
+  A flexible, two-column theme offering modern and customizable design.
 
 - **[Decap CMS](https://decapcms.org/):**  
-  An open-source, Git-based content management system that serves as our backend, enabling easy content updates.
+  A Git-based content management system enabling straightforward content updates.
 
 - **[GitHub Pages](https://pages.github.com/):**  
-  Our chosen hosting platform for deploying the static website, with support for custom domains.
+  Our hosting platform for the static website, supporting custom domains.
 
 - **Additional Jekyll Plugins:**
   - **jekyll-paginate:** For paginating posts.
@@ -38,9 +42,10 @@ Sonic Sensory Lab is a non-profit platform dedicated to exploring the intersecti
   - **jekyll-feed:** For generating RSS feeds.
   - **jekyll-include-cache:** To improve build performance.
 - **CSS/SCSS:**  
-  Custom styles applied to ensure a clean, direct, and modern design.
+  Custom styles ensure a clean, direct, and modern design.
 
+## License
 
-License: This project is licensed under the MIT License.
+This project is licensed under the MIT License.
 
 © 2024 ZONESOUND CREATIVE
