@@ -10,5 +10,19 @@
         "name": "Po-Hao Chi"
     },
     "items": [
+        {
+            "id": "https://zonesound.github.io/sonicsensorylab/residencies.html",
+            "url": "https://zonesound.github.io/sonicsensorylab/residencies.html",
+            "title": "Residencies",
+            "summary": "We conduct artist-in-residencies in Taiwan while sending Taiwanese artists to foreign countries.",
+            "content_html": "<p>We conduct artist-in-residencies in Taiwan while sending Taiwanese artists to foreign countries.</p>",
+            "author": {
+                "name": "Po-Hao Chi"
+            },
+            "tags": [
+            ],
+            "date_published": "2025-04-04T11:24:43+08:00",
+            "date_modified": "2025-04-04T11:24:43+08:00"
+        }
     ]
 }

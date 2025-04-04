@@ -3,10 +3,30 @@
     <title>Sonic Sensory Lab</title>
     <link href="https://zonesound.github.io/sonicsensorylab/feed.xml" rel="self" />
     <link href="https://zonesound.github.io/sonicsensorylab" />
-    <updated>1970-01-01T08:00:00+08:00</updated>
+    <updated>2025-04-04T11:24:43+08:00</updated>
     <author>
         <name>Po-Hao Chi</name>
     </author>
     <id>https://zonesound.github.io/sonicsensorylab</id>
 
+    <entry>
+        <title>Residencies</title>
+        <author>
+            <name>Po-Hao Chi</name>
+        </author>
+        <link href="https://zonesound.github.io/sonicsensorylab/residencies.html"/>
+        <id>https://zonesound.github.io/sonicsensorylab/residencies.html</id>
+
+        <updated>2025-04-04T11:24:43+08:00</updated>
+            <summary>
+                <![CDATA[
+                    We conduct artist-in-residencies in Taiwan while sending Taiwanese artists to foreign countries.
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <p>We conduct artist-in-residencies in Taiwan while sending Taiwanese artists to foreign countries.</p>
+            ]]>
+        </content>
+    </entry>
 </feed>
