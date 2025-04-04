@@ -1,0 +1,14 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "Sonic Sensory Lab",
+    "description": "",
+    "home_page_url": "https://zonesound.github.io/sonicsensorylab",
+    "feed_url": "https://zonesound.github.io/sonicsensorylab/feed.json",
+    "user_comment": "",
+    "icon": "https://zonesound.github.io/sonicsensorylab/media/website/Sheng-Hua-Gan-Guan-Shi-Yan-Shi-Logo.jpg",
+    "author": {
+        "name": "Po-Hao Chi"
+    },
+    "items": [
+    ]
+}
