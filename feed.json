@@ -15,7 +15,7 @@
             "url": "https://zonesound.github.io/sonicsensorylab/residencies.html",
             "title": "Residencies",
             "summary": "We conduct artist-in-residencies in Taiwan while sending Taiwanese artists to foreign countries.",
-            "content_html": "<p>We conduct artist-in-residencies in Taiwan while sending Taiwanese artists to foreign countries.<figure class=\"post__image\"><img loading=\"lazy\"  src=\"https://zonesound.github.io/sonicsensorylab/media/posts/1/IMG_1592.JPG\" alt=\"\" width=\"3024\" height=\"4032\" sizes=\"(max-width: 1920px) 100vw, 1920px\" srcset=\"https://zonesound.github.io/sonicsensorylab/media/posts/1/responsive/IMG_1592-xs.JPG 640w ,https://zonesound.github.io/sonicsensorylab/media/posts/1/responsive/IMG_1592-sm.JPG 768w ,https://zonesound.github.io/sonicsensorylab/media/posts/1/responsive/IMG_1592-md.JPG 1024w ,https://zonesound.github.io/sonicsensorylab/media/posts/1/responsive/IMG_1592-lg.JPG 1366w ,https://zonesound.github.io/sonicsensorylab/media/posts/1/responsive/IMG_1592-xl.JPG 1600w ,https://zonesound.github.io/sonicsensorylab/media/posts/1/responsive/IMG_1592-2xl.JPG 1920w\"></figure>",
+            "content_html": "<p>We conduct artist-in-residencies in Taiwan while sending Taiwanese artists to foreign countries.</p>\n<figure class=\"post__video\"><iframe loading=\"lazy\" width=\"1280\" height=\"718\" src=\"https://www.youtube.com/embed/-aFC4BCfxIY\" allowfullscreen=\"allowfullscreen\" data-mce-fragment=\"1\"></iframe></figure>\n<figure class=\"post__image\"><img loading=\"lazy\"  src=\"https://zonesound.github.io/sonicsensorylab/media/posts/1/IMG_1592.JPG\" alt=\"\" width=\"3024\" height=\"4032\" sizes=\"(max-width: 1920px) 100vw, 1920px\" srcset=\"https://zonesound.github.io/sonicsensorylab/media/posts/1/responsive/IMG_1592-xs.JPG 640w ,https://zonesound.github.io/sonicsensorylab/media/posts/1/responsive/IMG_1592-sm.JPG 768w ,https://zonesound.github.io/sonicsensorylab/media/posts/1/responsive/IMG_1592-md.JPG 1024w ,https://zonesound.github.io/sonicsensorylab/media/posts/1/responsive/IMG_1592-lg.JPG 1366w ,https://zonesound.github.io/sonicsensorylab/media/posts/1/responsive/IMG_1592-xl.JPG 1600w ,https://zonesound.github.io/sonicsensorylab/media/posts/1/responsive/IMG_1592-2xl.JPG 1920w\"></figure>",
             "author": {
                 "name": "Po-Hao Chi"
             },
@@ -23,7 +23,7 @@
                    "exhibitions"
             ],
             "date_published": "2025-04-04T11:24:43+08:00",
-            "date_modified": "2025-04-04T11:53:49+08:00"
+            "date_modified": "2025-04-04T14:47:56+08:00"
         }
     ]
 }
