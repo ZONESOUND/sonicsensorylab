@@ -3,7 +3,7 @@
     <title>Sonic Sensory Lab</title>
     <link href="https://zonesound.github.io/sonicsensorylab/feed.xml" rel="self" />
     <link href="https://zonesound.github.io/sonicsensorylab" />
-    <updated>2025-04-04T11:34:18+08:00</updated>
+    <updated>2025-04-04T11:53:49+08:00</updated>
     <author>
         <name>Po-Hao Chi</name>
     </author>
@@ -16,6 +16,7 @@
         </author>
         <link href="https://zonesound.github.io/sonicsensorylab/residencies.html"/>
         <id>https://zonesound.github.io/sonicsensorylab/residencies.html</id>
+            <category term="exhibitions"/>
 
         <updated>2025-04-04T11:24:43+08:00</updated>
             <summary>
