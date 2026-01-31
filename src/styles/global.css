@@ -90,9 +90,57 @@ main {
   border-color: var(--accent-color);
 }
 
-.rich-gradient-text {
-  /* Removed gradient, keeping the class for compatibility but making it solid */
-  background: none;
-  -webkit-text-fill-color: var(--accent-color);
+
+/* Main Content Spacer */
+.app-main {
+  padding-top: calc(var(--header-height) + 2rem);
+  min-height: 80vh;
+  /* Ensure footer pushes down */
+}
+
+/* Footer Styling */
+.app-footer {
+  padding: 4rem 2rem;
+  border-top: 1px solid var(--border-color);
+  margin-top: 4rem;
+  text-align: center;
+  color: var(--secondary-color);
+  font-size: 0.9rem;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.footer-location {
+  line-height: 1.8;
+  letter-spacing: 0.05em;
+}
+
+.footer-location a {
+  color: var(--text-color);
+  border-bottom: 1px solid var(--secondary-color);
+  padding-bottom: 2px;
+}
+
+.footer-location a:hover {
   color: var(--accent-color);
+  border-bottom-color: var(--accent-color);
+  opacity: 1;
+}
+
+.location-cn {
+  font-size: 0.85rem;
+  opacity: 0.7;
+  display: block;
+  margin-top: 4px;
+}
+
+.copyright {
+  font-size: 0.8rem;
+  opacity: 0.5;
+  font-family: var(--font-mono);
 }

@@ -13,7 +13,7 @@ function App() {
   return (
     <>
       <Navbar />
-      <main className="pt-24 min-h-screen">
+      <main className="app-main">
         <AnimatePresence mode="wait">
           <Routes location={location} key={location.pathname}>
             <Route path="/" element={<Home />} />
@@ -24,8 +24,15 @@ function App() {
           </Routes>
         </AnimatePresence>
       </main>
-      <footer className="py-8 text-center text-white/40 text-sm">
-        <p>&copy; {new Date().getFullYear()} Sonic Sensory Lab. All Rights Reserved.</p>
+      <footer className="app-footer">
+        <div className="footer-content">
+          <p className="footer-location">
+            Operating base: <a href="https://tmc.taipei/" target="_blank" rel="noopener noreferrer">Taipei Music Center</a>
+            <br />
+            <span className="location-cn">基地：臺北流行音樂中心</span>
+          </p>
+          <p className="copyright">&copy; {new Date().getFullYear()} Sonic Sensory Lab. All Rights Reserved.</p>
+        </div>
       </footer>
     </>
   );
