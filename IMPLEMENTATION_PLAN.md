@@ -5,24 +5,21 @@ Refactor the current static website into a modern, dynamic web application that 
 
 ## 2. Technology Stack
 *   **Framework:** [Vite](https://vitejs.dev/) + [React](https://react.dev/)
-    *   Fast, modern, and allows for "rich aesthetics" and interactive elements.
 *   **Content Management:** Markdown (`.md`)
     *   Articles/Cases will live in a `src/content` folder.
-    *   Frontmatter (metadata like title, date, image) will be parsed automatically.
 *   **Styling:** Vanilla CSS (Modern CSS Variables, Flexbox/Grid)
-    *   Focus on "Glassmorphism", "Dark Mode", and "Micro-animations" as per Sonic Sensory Lab's identity.
 *   **Deployment:** GitHub Actions
-    *   Auto-deploy to GitHub Pages whenever a new `.md` file is pushed.
 
 ## 3. Architecture
 ### File Structure
 ```
 /
+├── .agent/              # AI Skills & Workflows
 ├── .github/workflows/   # Auto-deployment scripts
 ├── src/
 │   ├── assets/          # Images, Fonts
 │   ├── components/      # Reusable UI (Navbar, Footer, Card)
-│   ├── content/         # YOUR MARKDOWN FILES (e.g., project-1.md)
+│   ├── content/         # MARKDOWN (content/projects/*.md, content/pages/*.md)
 │   ├── pages/           # Home, About, Article Detail
 │   ├── styles/          # Global CSS, Variables
 │   └── main.jsx         # Entry point
@@ -30,15 +27,20 @@ Refactor the current static website into a modern, dynamic web application that 
 └── package.json
 ```
 
-### Workflow for User
-1.  Create a new file: `src/content/new-project.md`
-2.  Write content + metadata.
-3.  Git Commit & Push.
-4.  Website updates automatically.
+## 4. Migration Status
+- [x] **Initialize:** Create new Vite + React project.
+- [x] **Setup:** Install Markdown parsers (`front-matter`, `react-markdown`).
+- [x] **Develop:** Build the layout and "Rich Aestetics" design.
+    - [x] Navbar (Responsive, Glassmorphism)
+    - [x] Footer (Simplified, Instagram link)
+    - [x] Home Page (Address added)
+    - [x] Projects Index (Grid layout)
+    - [x] Project Detail (Markdown rendering)
+    - [x] About Page (Markdown rendering)
+- [x] **Deploy:** Configure GitHub Actions.
+    - [x] SPA Fallback (`404.html`)
 
-## 4. Migration Steps
-1.  **Backup:** Move current files (`index.html`, `assets/`, etc.) to `_legacy_site/`.
-2.  **Initialize:** Create new Vite + React project.
-3.  **Setup:** Install Markdown parsers (`front-matter`, `react-markdown`).
-4.  **Develop:** Build the layout and "Rich Aesthetic" design.
-5.  **Deploy:** Configure GitHub Actions.
+## 5. Next Steps
+- [ ] **Instagram Integration:** Implement dynamic feed using `react-social-media-embed` or Graph API.
+- [ ] **Skill System:** Create `.agent/skills` to automate repetitive maintenance tasks.
+- [ ] **SEO Optimization:** Detailed meta tags per project.
