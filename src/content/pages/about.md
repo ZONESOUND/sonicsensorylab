@@ -10,8 +10,13 @@ Inspired by early cybernetic art practices, the team blends digital and analog s
 
 Our diverse projects include experimental soundscapes, interactive installations, crowd participation, international collaborations, and educational activities.
 
-### 訪問我們
-**臺北流行音樂中心 產業區 W102**
-地址：115028 台北市南港區市民大道 8 段 99 號
-(No. 99, Sec. 8, Civic Blvd., Nangang Dist., Taipei City 115028, Taiwan)
-電話：+886-02-2788-6620
+### Visit Us // 訪問我們
+
+**Shop W102, Taipei Music Center (Creative Hub)**
+*臺北流行音樂中心 產業區 W102*
+
+No. 99, Sec. 8, Civic Blvd., Nangang Dist.
+Taipei City 115028, Taiwan
+(115028 台北市南港區市民大道 8 段 99 號)
+
+**Phone:** +886-2-2788-6620
