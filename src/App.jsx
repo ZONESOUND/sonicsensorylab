@@ -7,6 +7,8 @@ import Social from './pages/Social';
 import About from './pages/About';
 import { AnimatePresence } from 'framer-motion';
 
+import { Instagram } from 'lucide-react';
+
 function App() {
   const location = useLocation();
 
@@ -25,13 +27,17 @@ function App() {
         </AnimatePresence>
       </main>
       <footer className="app-footer">
-        <div className="footer-content">
-          <p className="footer-location">
-            Operating base: <a href="https://tmc.taipei/" target="_blank" rel="noopener noreferrer">Taipei Music Center</a>
-            <br />
-            <span className="location-cn">基地：臺北流行音樂中心</span>
-          </p>
-          <p className="copyright">&copy; {new Date().getFullYear()} Sonic Sensory Lab. All Rights Reserved.</p>
+        <div className="footer-content" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', width: '100%' }}>
+          <p className="copyright" style={{ margin: 0 }}>&copy; {new Date().getFullYear()} Sonic Sensory Lab. All Rights Reserved.</p>
+          <a
+            href="https://www.instagram.com/sonic_sensory_lab/"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ display: 'flex', alignItems: 'center', color: 'white' }}
+            aria-label="Instagram"
+          >
+            <Instagram size={24} />
+          </a>
         </div>
       </footer>
     </>

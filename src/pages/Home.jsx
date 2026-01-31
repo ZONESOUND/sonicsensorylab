@@ -40,6 +40,18 @@ const Home = () => {
                         Blending digital and analog strategies to create immersive, organic experiences.
                     </p>
 
+                    <div style={{
+                        marginTop: '1.5rem',
+                        fontSize: '0.9rem',
+                        color: 'var(--secondary-color)',
+                        fontFamily: 'var(--font-mono)',
+                        lineHeight: 1.6
+                    }}>
+                        <p style={{ margin: 0 }}>Shop W102, Taipei Music Center</p>
+                        <p style={{ margin: 0 }}>No. 99, Sec. 8, Civic Blvd., Nangang Dist.</p>
+                        <p style={{ margin: 0 }}>Taipei City 115028, Taiwan</p>
+                    </div>
+
                     <Link to="/projects" style={{
                         fontSize: '1.2rem',
                         borderBottom: '1px solid white',
