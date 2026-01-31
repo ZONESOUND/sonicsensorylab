@@ -1,6 +1,13 @@
 import { motion } from 'framer-motion';
+import { getPage } from '../utils/markdown';
+import ReactMarkdown from 'react-markdown';
+import { useMemo } from 'react';
 
 const About = () => {
+    const page = useMemo(() => getPage('about'), []);
+
+    if (!page) return null;
+
     return (
         <motion.div
             initial={{ opacity: 0 }}
@@ -10,30 +17,27 @@ const About = () => {
             style={{ paddingBottom: '4rem' }}
         >
             <div className="glass-panel" style={{ maxWidth: '800px', margin: '0 auto' }}>
-                <h1 className="rich-gradient-text" style={{ fontSize: '3rem', marginBottom: '2rem' }}>About Us</h1>
+                <h1 className="rich-gradient-text" style={{ fontSize: '3rem', marginBottom: '2rem' }}>{page.frontmatter.title}</h1>
 
-                <div style={{ fontSize: '1.1rem', lineHeight: '1.8', color: '#ddd' }}>
-                    <p style={{ marginBottom: '1.5rem' }}>
-                        <strong>Sonic Sensory Lab</strong> focuses on sonification and sonic intervention, aiming to translate everyday occurrences into the auditory sensorium as a counterpoint to the overwhelming influence of visual culture.
-                    </p>
-
-                    <p style={{ marginBottom: '1.5rem' }}>
-                        Inspired by early cybernetic art practices, the team blends digital and analog strategies to explore the relationships between technology, humans, and the environment, creating immersive and organic sensorial experiences.
-                    </p>
-
-                    <p>
-                        Our diverse projects include experimental soundscapes, interactive installations, crowd participation, international collaborations, and educational activities.
-                    </p>
+                <div className="prose" style={{ fontSize: '1.1rem', lineHeight: '1.8', color: '#ddd' }}>
+                    <ReactMarkdown
+                        components={{
+                            p: ({ node, ...props }) => <p style={{ marginBottom: '1.5rem' }} {...props} />,
+                            strong: ({ node, ...props }) => <strong style={{ color: 'white', fontWeight: 600 }} {...props} />,
+                        }}
+                    >
+                        {page.content}
+                    </ReactMarkdown>
                 </div>
 
                 <div style={{ marginTop: '3rem', display: 'flex', gap: '2rem', flexWrap: 'wrap' }}>
                     <div>
                         <h3 style={{ color: 'var(--accent-color)', marginBottom: '0.5rem' }}>Contact</h3>
-                        <p>info@sonicsensorylab.art</p>
+                        <p>{page.frontmatter.contact}</p>
                     </div>
                     <div>
                         <h3 style={{ color: 'var(--accent-color)', marginBottom: '0.5rem' }}>Location</h3>
-                        <p>Taipei, Taiwan</p>
+                        <p>{page.frontmatter.location}</p>
                     </div>
                 </div>
             </div>

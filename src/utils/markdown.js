@@ -53,3 +53,13 @@ export function getPost(slug) {
     const posts = getPosts();
     return posts.find((p) => p.slug === slug);
 }
+
+export function getPage(slug) {
+    const modules = import.meta.glob('/src/content/pages/*.md', { eager: true, query: '?raw', import: 'default' });
+    const path = `/src/content/pages/${slug}.md`;
+
+    if (modules[path]) {
+        return parseFrontmatter(modules[path]);
+    }
+    return null;
+}
