@@ -1,0 +1,98 @@
+:root {
+  --bg-color: #0a0a0a;
+  /* Matte darker gray, almost black */
+  --text-color: #e5e5e5;
+  /* Soft white */
+  --accent-color: #ffffff;
+  /* Stark white for contrast */
+  --secondary-color: #888888;
+  /* Neutral gray */
+  --border-color: #333333;
+  /* Subtle dividing lines */
+  --font-main: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+  /* Classic Art-World Sans */
+  --font-mono: 'Courier New', monospace;
+  /* Raw data feel */
+
+  --spacing-unit: 8px;
+  --header-height: 80px;
+}
+
+body {
+  margin: 0;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: var(--font-main);
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.6;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--accent-color);
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  margin-top: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+}
+
+a:hover {
+  opacity: 0.7;
+}
+
+/* Scrollbar - Minimal */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-color);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #444;
+}
+
+/* Layout Utilities */
+.container {
+  max-width: 1400px;
+  /* Wider canvas */
+  margin: 0 auto;
+  padding: 0 40px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+main {
+  padding-top: var(--header-height);
+  /* Fix overlap */
+  min-height: 90vh;
+}
+
+/* Minimalist Panel (Replaces Glass) */
+.minimal-card {
+  border-top: 1px solid var(--border-color);
+  padding: 2rem 0;
+  background: transparent;
+  transition: border-color 0.3s ease;
+}
+
+.minimal-card:hover {
+  border-color: var(--accent-color);
+}
+
+.rich-gradient-text {
+  /* Removed gradient, keeping the class for compatibility but making it solid */
+  background: none;
+  -webkit-text-fill-color: var(--accent-color);
+  color: var(--accent-color);
+}
